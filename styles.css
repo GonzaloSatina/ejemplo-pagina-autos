@@ -11,8 +11,9 @@ body {
 body .btn {
   font-weight: 600;
 }
-/* NAVBAR */
 
+
+/* NAVBAR */
 nav .navbar-collapse input {
   width: 30rem;
   border: none;
@@ -121,16 +122,17 @@ main .marcas img {
 }
 
 /* AUTOS */
-main .autos .row div {
-  max-width: 13rem;
+main .card-autos .row div {
+  max-width: 286px;
   padding: 0;
   transition: 0.3s ease;
+  border-radius: 0.5rem;
 }
-main .autos .row div:hover {
+main .card-autos .row div:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-main .autos h3 {
+main .card-autos h3 {
   text-transform: uppercase;
   text-align: center;
   color: gray;
@@ -141,13 +143,17 @@ main .autos h3 {
   justify-content: center;
 }
 @media (max-width: 1000px) {
-  main .autos h3 {
+  main .card-autos h3 {
     font-size: 1rem;
   }
 }
-main .autos h4 {
+main .card-autos h4 {
   text-transform: uppercase;
   color: gray;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
+}
+main .card-autos img {
+  height: 170px;
 }
