@@ -68,6 +68,7 @@ body main div .carousel .carousel-indicators [data-bs-target] {
   width: 8px;
   height: 8px;
   border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
 }
 .carousel .carousel-indicators .active {
   width: 15px !important;
@@ -78,10 +79,12 @@ body main div .carousel .carousel-indicators [data-bs-target] {
   background-image: url("img/arrow-right.png") !important;
 }
 .carousel-control-next {
+  width: 3rem !important;
   display: flex !important;
   justify-content: end !important;
 }
 .carousel-control-prev {
+  width: 3rem !important;
   display: flex !important;
   justify-content: start !important;
 }
