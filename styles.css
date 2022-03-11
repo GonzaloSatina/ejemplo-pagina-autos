@@ -5,16 +5,16 @@
   --rosa: #f8cabe;
 }
 /* GENERALES */
-body{
-    background-color: rgba(128, 128, 128, 0.15) !important;
+body {
+  background-color: rgba(128, 128, 128, 0.15) !important;
 }
 body .btn {
-    font-weight: 600;
-  }
+  font-weight: 600;
+}
 /* NAVBAR */
 
 nav .navbar-collapse input {
-  width: 25rem;
+  width: 30rem;
   border: none;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -51,48 +51,73 @@ body nav {
 
 /* CAROUSEL */
 body main div .carousel {
-    display: flex;
-    justify-content: start;
-    border-radius: 0.5rem;
-  }
-body main div .carousel img{
-    border-radius: 0.5rem;
-  }
+  display: flex;
+  justify-content: start;
+  border-radius: 0.5rem;
+}
+body main div .carousel img {
+  border-radius: 0.5rem;
+}
 body main div .carousel .carousel-indicators {
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 body main div .carousel .carousel-indicators [data-bs-target] {
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
   border-radius: 100%;
 }
 .carousel .carousel-indicators .active {
+  width: 15px !important;
+  height: 15px !important;
   background-color: var(--principal) !important;
+}
+.carousel-control-next-icon {
+  background-image: url("img/arrow-right.png") !important;
+}
+.carousel-control-next {
+  display: flex !important;
+  justify-content: end !important;
+}
+.carousel-control-prev {
+  display: flex !important;
+  justify-content: start !important;
+}
+.carousel-control-prev-icon {
+  background-image: url("img/arrow-left.png") !important;
 }
 /* MARCAS */
 main .marcas {
-    background-color: rgba(128, 128, 128, 0.431);
-    height: 11rem;
+  background-color: rgba(128, 128, 128, 0.431);
+  height: 11rem;
 }
 main .marcas img {
-    max-width: 13rem;
+  max-width: 13rem;
 }
-@media (max-width:	1000px) {
-    main .marcas {
-        height: 6rem;
-    }
-    main .marcas img {
-        max-width: 7rem;
-    }
+@media (max-width: 1120px) {
+  main .marcas {
+    height: 6rem;
+  }
+  main .marcas img {
+    max-width: 7rem;
+  }
 }
-@media (max-width:	540px) {
-    main .marcas {
-        height: 3rem;
-    }
-    main .marcas img {
-        max-width: 4rem;
-    }
+@media (max-width: 640px) {
+  main .marcas {
+    height: 3rem;
+  }
+  main .marcas img {
+    max-width: 4rem;
+  }
+}
+@media (max-width: 370px) {
+  main .marcas {
+    height: 2rem;
+  }
+  main .marcas img {
+    max-width: 3rem;
+  }
 }
 
 /* AUTOS */
@@ -125,8 +150,4 @@ main .autos h4 {
   color: gray;
   font-size: 1rem;
   font-weight: 600;
-}
-main .autos img {
-  max-width: 13rem;
-  max-height: 111px;
 }
