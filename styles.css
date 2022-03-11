@@ -1,0 +1,132 @@
+:root {
+  --principal: #9b4efe;
+  --principalOscuro: #5100bb91;
+  --azuloscuro: #080a3c;
+  --rosa: #f8cabe;
+}
+/* GENERALES */
+body{
+    background-color: rgba(128, 128, 128, 0.15) !important;
+}
+body .btn {
+    font-weight: 600;
+  }
+/* NAVBAR */
+
+nav .navbar-collapse input {
+  width: 25rem;
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+nav .navbar-collapse button:first-of-type {
+  width: 3rem;
+  border: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+nav .navbar-collapse button:first-of-type:hover {
+  background-color: var(--principalOscuro) !important;
+}
+nav .navbar-collapse form button:nth-of-type(1) {
+  background-color: white;
+  color: var(--principal);
+  white-space: nowrap;
+}
+nav .navbar-collapse form button:nth-of-type(1):hover {
+  background-color: var(--principalOscuro);
+  color: white;
+}
+nav .navbar-collapse button:last-of-type {
+  background-color: transparent;
+  color: white;
+}
+nav .navbar-collapse button:last-of-type:hover {
+  background-color: var(--principalOscuro);
+  color: white;
+}
+body nav {
+  background-color: var(--principal);
+}
+
+/* CAROUSEL */
+body main div .carousel {
+    display: flex;
+    justify-content: start;
+    border-radius: 0.5rem;
+  }
+body main div .carousel img{
+    border-radius: 0.5rem;
+  }
+body main div .carousel .carousel-indicators {
+  display: flex;
+  justify-content: start;
+}
+body main div .carousel .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.carousel .carousel-indicators .active {
+  background-color: var(--principal) !important;
+}
+/* MARCAS */
+main .marcas {
+    background-color: rgba(128, 128, 128, 0.431);
+    height: 11rem;
+}
+main .marcas img {
+    max-width: 13rem;
+}
+@media (max-width:	1000px) {
+    main .marcas {
+        height: 6rem;
+    }
+    main .marcas img {
+        max-width: 7rem;
+    }
+}
+@media (max-width:	540px) {
+    main .marcas {
+        height: 3rem;
+    }
+    main .marcas img {
+        max-width: 4rem;
+    }
+}
+
+/* AUTOS */
+main .autos .row div {
+  max-width: 13rem;
+  padding: 0;
+  transition: 0.3s ease;
+}
+main .autos .row div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+main .autos h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: gray;
+  font-size: 1.5rem;
+  margin: 4rem auto 0 auto;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  main .autos h3 {
+    font-size: 1rem;
+  }
+}
+main .autos h4 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 1rem;
+  font-weight: 600;
+}
+main .autos img {
+  max-width: 13rem;
+  max-height: 111px;
+}
