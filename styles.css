@@ -63,6 +63,8 @@ body main div .carousel .carousel-indicators {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 body main div .carousel .carousel-indicators [data-bs-target] {
   width: 8px;
